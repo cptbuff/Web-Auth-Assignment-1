@@ -1,16 +1,16 @@
 body {
     font-family: Arial, Helvetica, sans-serif; /* change font to sans serif */
     background-image: url(images/background.jpeg); /* background image */
-    background-size: cover; /* background image will cover entire page regardless of zoom */
+    background-attachment: fixed; /* background image will cover entire page regardless of zoom */
     color: white; /* white text */
     padding-top: 75px; /* this will stop any content from getting blocked by navbar */
 }
 
 nav {
-    background-color: #000000; /* background colour for nav bar */
+    background-color: black; /* background colour for nav bar */
     display: flex; /* flexbox display to arrange content */
     align-items: center; /* center text. text will stick to the top otherwise */
-    justify-content: space-between; /* adds space between content. without this they will pile on top of each other */
+    justify-content: center; /* moves content towards the center of the page. without this the navbar will be skewed to the left     */
     top: 0; /* stick navbar to the top */
     left: 0; /* stick navbar to the left */
     position: fixed; /* allow navbar to move while user scrolls */
@@ -42,7 +42,14 @@ header p {
 }
 
 .login { /* align login form to the center of the screen */
-    align-content: center;
+    padding-top: 15%;
+    text-align: center;
+    
+}
+
+.login-button {
+    text-align: center;
+    padding-top: 5px;
 }
 
 .center { /* generic center class that can be assigned to anything I want to move to the middle of the screen */

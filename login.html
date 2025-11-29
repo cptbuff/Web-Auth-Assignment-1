@@ -7,21 +7,27 @@
     <title>Guitar Universe</title>
 </head>
 <body>
-    <nav class="flex-container"> <!-- FLEXBOX WITH LOGO -->
+    <nav class="flex-container">
         <div class="logo"><img src="images/Logo.png" alt="Guitar Universe"></div>
-        <div class="hover"><a class="no-underline" href="home.html">Home</a></div>
-        <div class="hover"><a class="no-underline" href="acoustic.html">Acoustic Guitars</a></div>
-        <div class="hover"><a class="no-underline" href="electric.html">Electric Guitars</a></div>
-        <div class="hover"><a class="no-underline" href="contact.html">Contact Us</a></div>
-        <div class="hover"><a class="no-underline" href="login.html">Log In</a></div>
+        
+        <div class="hover">
+            <a class="no-underline" href="home.html">Home</a>
+            <a class="no-underline" href="acoustic.html">Acoustic Guitars</a>
+            <a class="no-underline" href="electric.html">Electric Guitars</a>
+            <a class="no-underline" href="contact.html">Contact Us</a>
+            <a class="no-underline" href="login.html">Log In</a>
+        </div>
     </nav>
-
     <form class="login">
         <label for="username">First name:</label><br>
         <input type="text" id="username" name="username"><br>
         <label for="pword">Last name:</label><br>
         <input type="password" id="pword" name="pword">
-        <button type="button"><a href="home.html">Log In</a></button>
     </form>
+
+    <div class="login-button">
+        <button type="button"><a href="home.html">Log In</a></button>
+    </div>
+
 </body>
 </html>
