@@ -1,31 +1,54 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(images/background.jpeg);
+    font-family: Arial, Helvetica, sans-serif; /* change font to sans serif */
+    background-image: url(images/background.jpeg); /* background image */
+    background-size: cover; /* background image will cover entire page regardless of zoom */
+    color: white; /* white text */
+    padding-top: 75px; /* this will stop any content from getting blocked by navbar */
 }
 
 nav {
-    background-color: #3973ac;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
+    background-color: #000000; /* background colour for nav bar */
+    display: flex; /* flexbox display to arrange content */
+    align-items: center; /* center text. text will stick to the top otherwise */
+    justify-content: space-between; /* adds space between content. without this they will pile on top of each other */
+    top: 0; /* stick navbar to the top */
+    left: 0; /* stick navbar to the left */
+    position: fixed; /* allow navbar to move while user scrolls */
 }
 
-nav :hover {
-    background: #4f9eee;
+nav a {
+    color: white; /* white text */
+    text-decoration: none; /* remove hyperlink underline */
+    font-size: 30px; /* increase font size */
+    padding: 22px; /* this just makes the navbar more visually pleasing */
 }
 
-header {
-    background: black;
-    margin: 0px;
+nav a:hover { /* target a tags in navbar */
+    opacity: 0.5; /* reduce text opacity while hovering over navbar content. Makes it easier to tell which link is being clicked */
 }
 
-.no-underline {
-    text-decoration: none;
-    color: white;
+header p {
+    font-size: 25px; /* adjust p tag font size in header */
 }
 
-.flex-container {
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
+.flex-container { /* everything in this class gives the navbar shape */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.logo img { /* logo image size adjust */
+    height: 75px;
+}
+
+.login { /* align login form to the center of the screen */
+    align-content: center;
+}
+
+.center { /* generic center class that can be assigned to anything I want to move to the middle of the screen */
+    text-align: center;
+}
+
+.photos { /* photo grid flexbox */
+    align-content: center;
 }
