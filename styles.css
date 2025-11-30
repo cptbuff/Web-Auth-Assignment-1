@@ -5,6 +5,7 @@ body {
     color: white; /* white text */
     padding-top: 75px; /* this will stop any content from getting blocked by navbar */
     padding-bottom: 40px;
+    background-color: black;
 }
 
 nav {
@@ -26,6 +27,22 @@ nav a {
 
 nav a:hover { /* target a tags in navbar */
     opacity: 0.5; /* reduce text opacity while hovering over navbar content. Makes it easier to tell which link is being clicked */
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr td{
+    background-color: grey;
+    border: 1px solid black;
+}
+
+.center-video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header p {
@@ -82,4 +99,8 @@ footer p {
 
 .photos { /* photo grid flexbox */
     align-content: center;
+}
+
+.big-text {
+    font-size: large;
 }
